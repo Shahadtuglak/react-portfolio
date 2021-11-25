@@ -1,38 +1,139 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.App{
+  height: 100vh;
+}
+
+
+.navbar{
+  padding:0.5rem 1.5rem 0.5rem 3rem !important;
+  /* position: sticky;
+  top: 0; */
+}
+
+
+.navbar-brand{
+  font-weight: bold !important;
+}
+
+.navLinks{
+  padding-left: 1rem !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+  font-weight: bold !important;
+  font-size: 1rem !important;
+}
+
+
+.about h1{
+  text-align: center;
+  
+}
+
+.homepage{
+  margin: 2rem 0 2rem 2rem;
+  
+}
+
+.homepage .btn{
+  margin-top: 3rem;
+  border-radius: 25px;
+  width: 10rem !important;
+
+}
+
+
+
+footer{
+  padding-bottom: 0.5rem !important;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card-img-top{
+  height: 250px;
+  width:350px !important;
+  margin: 10px;
+}
+.card-body{
+  width: 350px !important;
+}
+
+
+.blog{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.blog img{
+  height: 330px;
+  width:450px;
+  margin: 10px;
+}
+
+.contact{
+  text-align: center !important;
+  margin-top: 8rem;
+}
+
+.iconSection{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon{
+  margin: 1rem !important;
+  color: black !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icon:hover{
+  color: red !important;
+
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media(max-width : 768px){
+  footer{
+    margin-top: 10rem !important;
+   
   }
-  to {
-    transform: rotate(360deg);
+  .about{
+    margin: 1rem 1rem 0 1rem !important;
+  }
+}
+
+/* Tablet */
+@media (min-width : 769px )and (max-width : 1023px){
+  footer{
+    margin-top: 20rem !important;
+  }
+  .about{
+    margin:1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width : 1024px){
+  footer{
+    margin-top: 20rem;
+  }
+  
+  .about{
+    margin:5rem;
   }
 }
